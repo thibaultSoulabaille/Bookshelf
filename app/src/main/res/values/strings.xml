@@ -1,0 +1,28 @@
+<resources>
+    <string name="app_name">Bookshelf</string>
+
+    <string name="activity_main">Main Activity</string>
+
+    <string name="fragment_home">Home</string>
+    <string name="fragment_shelves">Shelves</string>
+    <string name="fragment_books">Books</string>
+
+    <!-- navigation drawer menu items -->
+    <string name="home_button">home</string>
+    <string name="shelves_list_button">shelves</string>
+    <string name="books_list_button">books</string>
+    <string name="add_shelve">addShelve</string>
+    <string name="add_book">addBook</string>
+    <string name="new_shelve_name">shelve name</string>
+    <string name="new_shelve">new shelve</string>
+    <string name="new_shelve_ok">OK</string>
+    <string name="new_shelve_cancel">CANCEL</string>
+    <string name="delete_shelve">delete shelve</string>
+    <string name="edit_shelve_name">Rename</string>
+    <string name="book_title">Title</string>
+    <string name="author_surname">Author surname</string>
+    <string name="author_name">Author name</string>
+    <string name="new_book">New book</string>
+    <string name="release_year">Release year</string>
+    <string name="page_number">Page number</string>
+</resources>

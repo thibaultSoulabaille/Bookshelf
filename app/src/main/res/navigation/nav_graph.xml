@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph_home"
+    app:startDestination="@id/homeFragment">
+
+    <fragment
+        android:id="@+id/homeFragment"
+        android:name="fr.thibaultsoulabaille.bookshelf.ui.HomeFragment"
+        android:label="Home"
+        tools:layout="@layout/fragment_home">
+        <action
+            android:id="@+id/action_homeFragment_to_shelvesFragment"
+            app:destination="@id/shelvesFragment" />
+        <action
+            android:id="@+id/action_homeFragment_to_booksFragment2"
+            app:destination="@id/booksFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/shelvesFragment"
+        android:name="fr.thibaultsoulabaille.bookshelf.ui.ShelvesFragment"
+        android:label="Shelves"
+        tools:layout="@layout/fragment_shelves" >
+        <action
+            android:id="@+id/action_shelvesFragment_to_addShelveDialogFragment"
+            app:destination="@id/addShelveDialogFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/booksFragment"
+        android:name="fr.thibaultsoulabaille.bookshelf.ui.BooksFragment"
+        android:label="Books"
+        tools:layout="@layout/fragment_books" >
+        <action
+            android:id="@+id/action_booksFragment_to_addBookDialogFragment"
+            app:destination="@id/addBookDialogFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/addBookDialogFragment"
+        android:name="fr.thibaultsoulabaille.bookshelf.ui.dialog.AddBookDialogFragment"
+        android:label="AddBookDialogFragment" />
+    <fragment
+        android:id="@+id/addShelveDialogFragment"
+        android:name="fr.thibaultsoulabaille.bookshelf.ui.dialog.AddShelveDialogFragment"
+        android:label="AddShelveDialogFragment" />
+</navigation>
